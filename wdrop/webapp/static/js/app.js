@@ -6,8 +6,6 @@ var packets = document.getElementById('packets');
 var channel = new DataChannel();
 var sendfile = document.getElementById('sendfile');
 
-channel.firebase = 'webrtc-experiment';
-
 channel.onmessage = function(data) {
     console.log("new message");
     console.log(data);
@@ -54,13 +52,13 @@ channel.onclose = function(event) {
 
 function openChannel() {
 	console.log("try to open channel");
-	channel.open('webdrop');
+	channel.open('webdropasfgasdfa');
     console.log(channel);
 }
 
 function connectChannel() {
     console.log("try to connect");
-	channel.connect('webdrop');
+	channel.connect('webdropasfgasdfa');
     console.log(channel);
 }
 
