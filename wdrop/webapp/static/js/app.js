@@ -54,13 +54,13 @@ channel.onclose = function(event) {
 
 function openChannel() {
 	console.log("try to open channel");
-	channel.open('cenas');
+	channel.open('webdrop');
     console.log(channel);
 }
 
 function connectChannel() {
     console.log("try to connect");
-	channel.connect('cenas');
+	channel.connect('webdrop');
     console.log(channel);
 }
 
